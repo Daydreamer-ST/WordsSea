@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFF">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_margin="10dp"
+		android:background="#FFFFFF"
+		android:elevation="5dp">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_margin="10dp"
+			android:gravity="center">
+
+			<EditText
+				android:inputType="textMultiLine"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0"
+				android:id="@+id/searched"/>
+
+			<Button
+				android:layout_height="30dp"
+				android:layout_width="30dp"
+				android:text="Q"
+				android:background="@drawable/yuan"
+				android:textColor="#FFFFFF"
+				android:onClick="ss"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_weight="1.0"
+		android:gravity="bottom">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1.0"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/starss"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:text="单词"
+				android:id="@+id/words"
+				android:textColor="#333333"
+				android:textSize="25sp"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="翻译"
+				android:layout_margin="5dp"
+				android:id="@+id/translates"
+				android:textColor="#757575"
+				android:textSize="12sp"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="词组/例句"
+				android:id="@+id/phrases"
+				android:textSize="15sp"
+				android:textColor="#757575"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<Button
+				android:elevation="15dp"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="强化"
+				android:background="#f44336"
+				android:layout_weight="1.0"
+				android:textColor="#FFFFFF"
+				android:onClick="ups"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="弱化"
+				android:layout_weight="1.0"
+				android:background="#2196f3"
+				android:textColor="#FFFFFF"
+				android:onClick="downs"/>
+
+			<Button
+				android:elevation="15dp"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="修改"
+				android:background="#009688"
+				android:layout_weight="1.0"
+				android:textColor="#FFFFFF"
+				android:onClick="save"
+				android:id="@+id/save"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

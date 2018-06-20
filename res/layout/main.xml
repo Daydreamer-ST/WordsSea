@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="bottom|center"
+	android:background="#FFFFFF"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="#37474f"
+		android:orientation="horizontal">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="分类"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			android:onClick="sort"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="新增"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			android:onClick="create"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="搜索"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			android:onClick="search"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_weight="1.0"
+		android:gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/stars"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="单词"
+			android:id="@+id/word"
+			android:textColor="#333333"
+			android:textSize="25sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="翻译"
+			android:layout_margin="5dp"
+			android:id="@+id/translate"
+			android:textColor="#757575"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="词组/例句"
+			android:id="@+id/phrase"
+			android:textSize="14sp"
+			android:textColor="#757575"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#FFFFFF"
+		android:elevation="25dp">
+
+		<Button
+			android:elevation="15dp"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="强化"
+			android:background="#f44336"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			android:onClick="up"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="弱化"
+			android:layout_weight="1.0"
+			android:background="#2196f3"
+			android:textColor="#FFFFFF"
+			android:onClick="down"/>
+
+		<Button
+			android:elevation="15dp"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="下一个"
+			android:background="#009688"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			android:onClick="next"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

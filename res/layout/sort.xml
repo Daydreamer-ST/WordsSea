@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="#37474f"
+		android:orientation="horizontal"
+		android:elevation="10dp">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="简单"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			android:id="@+id/easy"
+			android:onClick="easy"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="中等"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			android:id="@+id/medium"
+			android:onClick="medium"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="困难"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			android:id="@+id/difficult"
+			android:onClick="difficult"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<ListView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:divider="@null"
+			android:id="@+id/sortlist"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#333333"
+			android:text="选择分类"
+			android:id="@+id/sorttv"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
